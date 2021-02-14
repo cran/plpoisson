@@ -7,7 +7,7 @@ function(xobs, n, s, t, alpha = 0.05)
   prob <- ns / nst
 
   res <- list()
-  res$lower <- qnbinom(alpha, xobs, prob)
-  res$upper <- qnbinom(alpha, xobs, prob, lower.tail = FALSE)
+  res$lower <- qnbinom(alpha, xobs, prob) + 1
+  res$upper <- qnbinom(alpha, xobs, prob, lower.tail = FALSE) - 1
   return(res)
 }

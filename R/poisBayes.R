@@ -14,7 +14,7 @@ function( xobs, n, s, t, a, b, alpha = 0.05)
   }
 
   res <- list()
-  res$lower <- qnbinom(alpha, xobs + a, prob)
-  res$upper <- qnbinom(alpha, xobs + a, prob, lower.tail = FALSE)
+  res$lower <- qnbinom(alpha, xobs + a, prob) + 1
+  res$upper <- qnbinom(alpha, xobs + a, prob, lower.tail = FALSE) - 1
   return(res)
 }

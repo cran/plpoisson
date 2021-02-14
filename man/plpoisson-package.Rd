@@ -17,8 +17,8 @@ For frequentist prediction a common approach is to estimate the parameter based 
 \tabular{ll}{
   Package: \tab plpoisson\cr
   Type: \tab Package\cr
-  Version: \tab 0.1.1\cr
-  Date: \tab 2020-06-01\cr
+  Version: \tab 0.2.0\cr
+  Date: \tab 2021-02-14\cr
   License: \tab GPL-3\cr
 }
 

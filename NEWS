@@ -1,5 +1,18 @@
 plpoisson News
 
+CHANGES IN plpoisson 0.2.0
+
+  BUG FIXES:
+    o The methodological description and references in the manual
+      files for the R functions `poisBayes`, `poisUNIF` and
+      `poisJEFF` was adjusted.
+
+    o The lower bounds provided by the R functions in the files
+      `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been fixed.
+
+    o The upper bounds provided by the R functions in the files
+      `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been fixed.
+
 CHANGES IN plpoisson 0.1.1
 
   BUG FIXES:
@@ -9,33 +22,33 @@ CHANGES IN plpoisson 0.1.1
 CHANGES IN plpoisson 0.1.0
 
   BUG FIXES:
-    o the C function `plBinom` has been fixed by implementing a
+    o The C function `plBinom` has been fixed by implementing a
       binary search algorithm for lower and upper frequentist limits.
 
-    o the R functions poisUNIF(), poisJEFF() and poisBayes() are now
+    o The R functions poisUNIF(), poisJEFF() and poisBayes() are now
       returning prediction limits based on the negative binomial
       quantile function.
 
-    o useless lines of code on all R functions has been removed.
+    o Useless lines of code on all R functions has been removed.
 
-    o the argument `epsilon = NULL` has been dropped from all
+    o The argument `epsilon = NULL` has been dropped from all
       implemented functions.
 
 CHANGES IN plpoisson 0.0.1
 
   NEW FEATURES:
-    o the function poiss() is implemented for providing prediction
+    o The function poiss() is implemented for providing prediction
       limits for the Poisson distribution from a frequentist
       viewpoint.
 
-    o the function poisUNIF() is implemented for providing prediction
+    o The function poisUNIF() is implemented for providing prediction
       limits for the Poisson distribution from a Bayesian viewpoint
       by using a Uniform prior.
 
-    o the function poisJEFF() is implemented for providing prediction
+    o The function poisJEFF() is implemented for providing prediction
       limits for  the Poisson distribution from a Bayesian viewpoint
       by using Jeffreys prior.
 
-    o the function poisBayes() is implemented for providing prediction
+    o The function poisBayes() is implemented for providing prediction
       limits for  the Poisson distribution from a Bayesian viewpoint
       by using Jeffreys prior.

@@ -21,8 +21,6 @@ The function provides the Bayesian prediction limits of a Poisson random variabl
 
 \details{
 The resulting limits are equivalent to those provided when running the function \code{poisBayes()} with arguments \code{a = 0} and \code{b = Inf}.
-
-Prediction bounds are obtained through the binary search algorithm.
 }
 
 \value{
@@ -36,8 +34,6 @@ A list containing the following components:
 Bejleri, V., & Nandram, B. (2018). Bayesian and frequentist prediction limits for the Poisson distribution. \emph{Communications in Statistics-Theory and Methods}, \bold{47}(17), 4254-4271.
 
 Bejleri, V. (2005). \emph{Bayesian Prediction Intervals for the Poisson Model, Noninformative Priors}, Ph.D. Dissertation, American University, Washington, DC.
-
-Davis, C. H. (1969). The binary search algorithm. \emph{American Documentation (pre-1986)}, \bold{20}(2), 167.
 }
 
 \author{Valbona Bejleri, Luca Sartore and Balgobin Nandram}
