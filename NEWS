@@ -1,5 +1,28 @@
 plpoisson News
 
+CHANGES IN plpoisson 0.3.0
+
+  NEW FEATURES:
+  
+    o Included `src/plpbootstrap.c` to estimate hyperparameters.
+
+    o Included `R/hyperbootstrap.R` to bootstrap hyperparameters.
+
+  BUG FIXES:
+  
+    o Edited the file `NAMESPACE` to include the function `na.omit()`
+      from the `stats` package.
+
+    o Included a new reference in `man/plpoisson-package.Rd` and edit
+      the logo HTML5 attribute from `align="right"` 
+      to `sytle="float: right;"`.
+
+    o Edited the `DESCRIPTION` file to include a new reference.
+    
+    o Included a new reference in `README.md` and edited the logo 
+      HTML5 attribute from `align="right"` 
+      to `sytle="float: right;"`.
+
 CHANGES IN plpoisson 0.2.0
 
   BUG FIXES:

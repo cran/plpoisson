@@ -7,7 +7,7 @@
 \title{\packageTitle{plpoisson}}
 
 \description{
-\if{html}{\figure{logo.svg}{options: align='right'}}
+\if{html}{\figure{logo.svg}{options: style='float: right;'}}
 Prediction limits for Poisson distribution are useful when quantifying the uncertainty associated with predicting the occurrences of real life phenomena. The \pkg{plpoisson} package provides a set of functions to compute prediction limits of the inferred Poisson distribution under both, frequentist and Bayesian frameworks.
 
 For frequentist prediction a common approach is to estimate the parameter based on the observed data firstly, then, to predict based on the estimated parameter. Different from the common approach of frequentist prediction, this approach does not require the estimation of the parameter. In a Bayesian setting, the uniform, Jeffreys and gamma distributions are used as priors when deriving the predictive posterior distribution. 
@@ -17,8 +17,8 @@ For frequentist prediction a common approach is to estimate the parameter based 
 \tabular{ll}{
   Package: \tab plpoisson\cr
   Type: \tab Package\cr
-  Version: \tab 0.2.0\cr
-  Date: \tab 2021-02-14\cr
+  Version: \tab 0.3.0\cr
+  Date: \tab 2022-05-09\cr
   License: \tab GPL-3\cr
 }
 
@@ -33,6 +33,8 @@ Maintainer: Luca Sartore \email{drwolf85@gmail.com}
 
 \references{
 Bejleri, V., & Nandram, B. (2018). Bayesian and frequentist prediction limits for the Poisson distribution. \emph{Communications in Statistics-Theory and Methods}, \bold{47}(17), 4254-4271.
+
+Bejleri, V., Sartore, L. & Nandram, B. (2021). \emph{Asymptotic equivalence between frequentist and Bayesian prediction limits for the Poisson distribution}. Journal of the Korean Statistical Society \doi{10.1007/s42952-021-00157-x}
 
 Bejleri, V. (2005). \emph{Bayesian Prediction Intervals for the Poisson Model, Noninformative Priors}, Ph.D. Dissertation, American University, Washington, DC.
 }

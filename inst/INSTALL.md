@@ -42,13 +42,13 @@ install.packages("plpoisson")
 
 The other alternative to install an R package is from its source-code compressed as a tarball archive. This can be done by entering the following command into a terminal session on **Linux** and **(Mac) OS X**  :
 ```bash
-R CMD INSTALL plpoisson_0.2.0.tar.gz
+R CMD INSTALL plpoisson_0.3.0.tar.gz
 ```
 
 On **Windows**, by opening the command prompt (`cmd.exe`), it is possible to point to the proper directory with `cd`, and then install the package via `Rcmd.exe` with the following command:
 
 ```bash
-Rcmd.exe INSTALL plpoisson_0.2.0.tar.gz
+Rcmd.exe INSTALL plpoisson_0.3.0.tar.gz
 ```
 
 More details can be found on the "Installing packages" section of the [R-admin](https://cran.r-project.org/doc/manuals/R-admin.html) manual.

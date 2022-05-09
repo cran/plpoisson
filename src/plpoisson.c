@@ -8,20 +8,20 @@ void R_init_plpoisson(DllInfo *info) {
   R_useDynamicSymbols(info, TRUE);
 }
 
+/**
+ * @brief Prediction limits with Binomial distribution
+ * @param xo Number of observed occurrences (integer)
+ * @param p probability (real number between 0 and 1)
+ * @param a coverage probability (type I error)
+ * @param up upper bound (integer; used for output)
+ * @param lw lower bound (integer; used for output)
+ *
+ * No output is returned.  The values of `up` and `lw`
+ * are replaced by the resulting upper and lower bounds
+ * respectively.
+ */
 void plBinom(int *xo, double *p, double *a,
              int *up, int *lw) {
-  /* Prediction limits with Binomial distribution
-     INPUT:
-       *xo - Number of observed occurrences (integer)
-        *p - probability (real number between 0 and 1)
-        *a - coverage probability (type I error)
-       *up - upper bound (integer; used for output)
-       *lw - lower bound (integer; used for output)
-     OUTPUT:
-       No output is returned.  The values of `up` and `lw` are replaced by the
-       resulting upper and lower bounds respectively.
-   */
-
   int s;
   double tmp;
 
@@ -58,4 +58,3 @@ void plBinom(int *xo, double *p, double *a,
   } while (s > 1);
   *up += 1;
 }
-
