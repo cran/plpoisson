@@ -1,77 +1,96 @@
 plpoisson News
 
+CHANGES IN plpoisson 0.3.1
+
+BUG FIXES:
+
+ o Edited `src/plpbootstrap.c` to use `R_Calloc` and `R_Free`.
+
+ o Edited the file `NEWS` according to GNU standards.
+ 
+ 
+
 CHANGES IN plpoisson 0.3.0
 
-  NEW FEATURES:
+NEW FEATURES:
   
-    o Included `src/plpbootstrap.c` to estimate hyperparameters.
+ o Included `src/plpbootstrap.c` to estimate hyperparameters.
 
-    o Included `R/hyperbootstrap.R` to bootstrap hyperparameters.
+ o Included `R/hyperbootstrap.R` to bootstrap hyperparameters.
 
-  BUG FIXES:
-  
-    o Edited the file `NAMESPACE` to include the function `na.omit()`
-      from the `stats` package.
+BUG FIXES:
 
-    o Included a new reference in `man/plpoisson-package.Rd` and edit
-      the logo HTML5 attribute from `align="right"` 
-      to `sytle="float: right;"`.
+ o Edited the file `NAMESPACE` to include the function `na.omit()`
+   from the `stats` package.
 
-    o Edited the `DESCRIPTION` file to include a new reference.
-    
-    o Included a new reference in `README.md` and edited the logo 
-      HTML5 attribute from `align="right"` 
-      to `sytle="float: right;"`.
+DOCUMENTATION:
+
+ o Edited the `DESCRIPTION` file to include a new reference.   
+
+
 
 CHANGES IN plpoisson 0.2.0
 
-  BUG FIXES:
-    o The methodological description and references in the manual
-      files for the R functions `poisBayes`, `poisUNIF` and
-      `poisJEFF` was adjusted.
+BUG FIXES:
 
-    o The lower bounds provided by the R functions in the files
-      `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been fixed.
+ o The methodological description and references in the manual
+   files for the R functions `poisBayes`, `poisUNIF` 
+   and `poisJEFF` was adjusted.
 
-    o The upper bounds provided by the R functions in the files
-      `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been fixed.
+ o The lower bounds provided by the R functions in the 
+   files `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been 
+   fixed.
+
+ o The upper bounds provided by the R functions in the 
+   files `poisBayes.R`, `poisUNIF.R` and `poisJEFF.R` have been
+   fixed.
+
+
 
 CHANGES IN plpoisson 0.1.1
 
-  BUG FIXES:
-    o Fixed capitalized letter/typos in the description field of the 
-      DESCRIPTION file.
+BUG FIXES:
+
+ o Fixed capitalized letter/typos in the description field of the 
+   DESCRIPTION file.
+
+
 
 CHANGES IN plpoisson 0.1.0
 
-  BUG FIXES:
-    o The C function `plBinom` has been fixed by implementing a
-      binary search algorithm for lower and upper frequentist limits.
+BUG FIXES:
 
-    o The R functions poisUNIF(), poisJEFF() and poisBayes() are now
-      returning prediction limits based on the negative binomial
-      quantile function.
+ o The C function `plBinom` has been fixed by implementing a
+   binary search algorithm for lower and upper frequentist limits.
 
-    o Useless lines of code on all R functions has been removed.
+ o The R functions poisUNIF(), poisJEFF() and poisBayes() are now
+   returning prediction limits based on the negative binomial
+   quantile function.
 
-    o The argument `epsilon = NULL` has been dropped from all
-      implemented functions.
+ o Useless lines of code on all R functions has been removed.
+
+ o The argument `epsilon = NULL` has been dropped from all
+   implemented functions.
+
+
 
 CHANGES IN plpoisson 0.0.1
 
-  NEW FEATURES:
-    o The function poiss() is implemented for providing prediction
-      limits for the Poisson distribution from a frequentist
-      viewpoint.
+NEW FEATURES:
 
-    o The function poisUNIF() is implemented for providing prediction
-      limits for the Poisson distribution from a Bayesian viewpoint
-      by using a Uniform prior.
+ o The function poiss() is implemented for providing prediction
+   limits for the Poisson distribution from a frequentist
+   viewpoint.
 
-    o The function poisJEFF() is implemented for providing prediction
-      limits for  the Poisson distribution from a Bayesian viewpoint
-      by using Jeffreys prior.
+ o The function poisUNIF() is implemented for providing prediction
+   limits for the Poisson distribution from a Bayesian viewpoint
+   by using a Uniform prior.
 
-    o The function poisBayes() is implemented for providing prediction
-      limits for  the Poisson distribution from a Bayesian viewpoint
-      by using Jeffreys prior.
+ o The function poisJEFF() is implemented for providing prediction
+   limits for  the Poisson distribution from a Bayesian viewpoint
+   by using Jeffreys prior.
+
+ o The function poisBayes() is implemented for providing prediction
+   limits for  the Poisson distribution from a Bayesian viewpoint
+   by using Jeffreys prior.
+

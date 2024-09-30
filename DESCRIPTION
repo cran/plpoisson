@@ -1,8 +1,8 @@
 Package: plpoisson
 Type: Package
 Title: Prediction Limits for Poisson Distribution
-Version: 0.3.0
-Date: 2022-05-09
+Version: 0.3.1
+Date: 2024-09-29
 Authors@R: c(person("Valbona", "Bejleri",
                     role = "aut",
                     email = "valbona.bejleri@gmail.com",
@@ -27,6 +27,6 @@ Description: Prediction limits for the Poisson distribution
   Nandram (2021) <doi:10.1007/s42952-021-00157-x>.
 License: GPL-3
 NeedsCompilation: yes
-Packaged: 2022-05-09 16:33:27 UTC; sartore
+Packaged: 2024-09-30 03:54:02 UTC; sartore
 Repository: CRAN
-Date/Publication: 2022-05-09 18:40:02 UTC
+Date/Publication: 2024-09-30 04:50:06 UTC

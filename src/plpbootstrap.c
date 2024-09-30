@@ -111,7 +111,7 @@ void ABChisq(int *x, int *n, double *a, double *b) {
     double step;
 
     in = 1.0 / (double) *n;
-    lambda = Calloc(NBOOT, double);
+    lambda = R_Calloc(NBOOT, double);
 
     /* Bootstrapping with replacement */
     GetRNGstate();
@@ -137,7 +137,7 @@ void ABChisq(int *x, int *n, double *a, double *b) {
     } while (fabs(step) > TOL_H);
     *a = exp(*a);
     *b = 2.0 * lambda[50] / Rf_qchisq(0.05, *a * 2.0, 1, 0);
-    Free(lambda);
+    R_Free(lambda);
 }
 
 /**
@@ -162,7 +162,7 @@ void hyperbootstrap(int *x, int *n, double *a, double *b, int *p, int *met, int 
     fun[1] = ABmle;
     fun[2] = ABChisq;
 
-    xx = Calloc(*n, int);
+    xx = R_Calloc(*n, int);
     GetRNGstate();
     if (xx) {
         for (k = 0; k < *m; k++) { /* For each chosen bootstrap method*/
@@ -177,7 +177,7 @@ void hyperbootstrap(int *x, int *n, double *a, double *b, int *p, int *met, int 
                 }
             }
         }
-        Free(xx);
+        R_Free(xx);
     }
     PutRNGstate();
 }

@@ -1,7 +1,6 @@
 # plpoisson: Prediction Limits for the Poisson Distribution
 
-
-### Authors <img src="man/figures/logo.svg" style="float: right;" alt="plpoisson logo" />
+### Authors <img src="man/figures/logo.svg" align="right" alt="plpoisson logo" />
 [Valbona Bejleri](mailto://valbona.bejleri@gmail.com)[<img alt="ORCID iD" src="https://cran.r-project.org/web/orcid.svg" width="16px" height="16px" style="margin-left:4px; margin-right:4px; vertical-align:middle">](https://orcid.org/0000-0001-9828-968X), [Luca Sartore](mailto://drwolf85@gmail.com)[<img alt="ORCID iD" src="https://cran.r-project.org/web/orcid.svg" width="16px" height="16px" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle">](https://orcid.org/0000-0002-0446-1328) and [Balgobin Nandram](mailto://balnan@wpi.edu)[<img alt="ORCID iD" src="https://cran.r-project.org/web/orcid.svg" width="16px" height="16px" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle">](https://orcid.org/0000-0002-3204-0301)
 
 Maintainer: [Luca Sartore](mailto://drwolf85@gmail.com)
